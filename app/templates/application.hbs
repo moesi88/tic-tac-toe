@@ -1,14 +1,16 @@
 <div class="container">
+   {{#if showDialog}}
     <div class='message-container'>
         <div class='message-wrapper'>
             <h2>Welcome</h2>
             <p>Choose your symbol!</p>
             <div class="buttons layout-row">
-                <button>X</button>
-                <button>O</button>
+                <button {{action "selectSymbol" "X"}}>X</button>
+                <button {{action "selectSymbol" "O"}}>O</button>
             </div>
         </div>
     </div>
+    {{/if}}
 
     <div class="game-board">
         <h1>Tic Tac Toe</h1>
