@@ -12,23 +12,23 @@
     </div>
     {{/if}}
 
-    <div class="game-board">
+   <div class="game-board">
         <h1>Tic Tac Toe</h1>
         <div class="board-container">
             <div class="row">
-                <div class="box">{{one}}</div>
-                <div class="box">{{two}}</div>
-                <div class="box">{{three}}</div>
+                <div class="box" {{action 'markBox' playerOne 'one' 1}}>{{one}}</div>
+                <div class="box" {{action 'markBox' playerOne 'two' 2}}>{{two}}</div>
+                <div class="box" {{action 'markBox' playerOne 'three' 3}}>{{three}}</div>
             </div>
             <div class="row">
-                <div class="box">{{four}}</div>
-                <div class="box">{{five}}</div>
-                <div class="box">{{six}}</div>
+                <div class="box" {{action 'markBox' playerOne 'four' 4}}>{{four}}</div>
+                <div class="box" {{action 'markBox' playerOne 'five' 5}}>{{five}}</div>
+                <div class="box" {{action 'markBox' playerOne 'six' 6}}>{{six}}</div>
             </div>
             <div class="row">
-                <div class="box">{{seven}}</div>
-                <div class="box">{{eight}}</div>
-                <div class="box">{{nine}}</div>
+                <div class="box" {{action 'markBox' playerOne 'seven' 7}}>{{seven}}</div>
+                <div class="box" {{action 'markBox' playerOne 'eight' 8}}>{{eight}}</div>
+                <div class="box" {{action 'markBox' playerOne 'nine' 9}}>{{nine}}</div>
             </div>
         </div>
         <br>
