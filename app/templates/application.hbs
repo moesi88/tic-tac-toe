@@ -12,6 +12,12 @@
     </div>
     {{/if}}
 
+
+    {{#if showReset}}
+    {{end-game-window outcome=outcome quit='quit' reset='reset'}}
+    {{/if}}
+
+
    <div class="game-board">
         <h1>Tic Tac Toe</h1>
         <div class="board-container">

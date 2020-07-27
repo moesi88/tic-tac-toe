@@ -134,5 +134,27 @@ export default Ember.Controller.extend({
         gameLogic(this, oPlayed, "O", box, number, winningPatterns);
       }
     },
+    quit() {
+      set(this, "showReset", false);
+      set(this, "hasQuit", true);
+    },
+    reset() {
+      set(this, "showReset", false);
+      set(this, "outcome", null);
+      set(this, "xPlayed", Ember.A());
+      set(this, "oPlayed", Ember.A());
+      set(this, "computerPlayed", Ember.A());
+      this.setProperties({
+        one: null,
+        two: null,
+        three: null,
+        four: null,
+        five: null,
+        six: null,
+        seven: null,
+        eight: null,
+        nine: null,
+      });
+    },
   },
 });
